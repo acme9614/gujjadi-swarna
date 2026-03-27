@@ -126,6 +126,12 @@
             class="hover:text-[#a7704a]"
             >Gold</a
           >
+            <a
+            href="#"
+            onclick="navigateToARVirtualTryOn()"
+            class="hover:text-[#a7704a]"
+            >Virtual Try-On</a
+          >
           <a
             href="#"
             onclick="navigateToPanchang()"
@@ -247,7 +253,7 @@
       <!-- Tabs Grid -->
       <div
         id="tabsGrid"
-        class="max-w-4xl mx-auto grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4 place-items-center"
+        class="max-w-4xl mx-auto grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4 place-items-center"
       >
         <!-- Tab 1 -->
         <div
@@ -520,6 +526,34 @@
 
           <!-- Text outside the shape -->
           <span class="text-sm text-black font-bold">Gold</span>
+        </div>
+
+        <!-- Virtual Try-On -->
+         <div
+          class="relative hidden sm:block text-center"
+          data-extra
+          data-aos="zoom-in"
+          data-aos-delay="750"
+        >
+          <!-- Shape with icon inside -->
+          <div class="relative w-24 h-24 rounded-full overflow-hidden">
+            <img
+              src="assets/shapes-removebg-preview.png"
+              class="w-full h-full rounded-full cursor-pointer"
+              onclick="navigateToARVirtualTryOn()"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none"
+            >
+              <img
+                src="assets/virtual.png"
+                class="w-8 h-8 invert"
+              />
+            </div>
+          </div>
+
+          <!-- Text outside the shape -->
+          <span class="text-sm text-black font-bold">Virtual Try-On</span>
         </div>
         <!-- Tab 11 -->
         <div
